@@ -1,0 +1,124 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-block: 35px;
+    padding-inline: 34px;
+    border-radius: 20px;
+    background: var(--color-light-gradient);
+    width: 367px;
+    z-index: 1;
+}
+
+.form__title {
+    color: var(--color-dark-20);
+    font-size: clamp(22px, 1.6vw, 24px);
+    font-weight: 700;
+    margin-bottom: 8.2px;
+}
+
+.form__text {
+    font-size: clamp(16px, 1.25vw, 18px);
+    font-weight: 300;
+    margin-bottom: 24.6px;
+}
+
+.form__tel {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25.6px;
+    position: relative;
+}
+
+.form__tel::before {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(icon/form/phone-sm.svg);
+    width: 18px;
+    height: 18.48px;
+}
+
+.form__tel-aria {
+    color: var(--color-grey);
+    font-size: clamp(14px, 1.1vw, 16px);
+    margin-bottom: 14px;
+}
+
+.form__tel-input {
+    padding-left: 11px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    height: 51px;
+    font-size: clamp(14px, 1.1vw, 16px);
+    display: flex;
+}
+
+.form__tel-input::placeholder {
+    color: var(--color-grey);
+}
+
+.form__tel-input-svg {
+    width: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.form__button {
+    height: 78px;
+    margin-bottom: 26.8px;
+}
+
+.form__checkbox {
+    display: flex;
+    align-items: start;
+    column-gap: 5.8px;
+}
+
+.form__checkbox-input {
+    margin-top: 5px;
+}
+
+.form__checkbox-aria {
+    color: var(--color-dark-30);
+    font-weight: 400;
+    font-size: clamp(14px, 1.1vw, 16px);
+}
+
+@media(max-width:1150px) {
+    .form {
+        width: auto;
+    }
+}
+
+@media(max-width:770px) {
+    .form {
+        align-items: center;
+        padding-left: 42px;
+        padding-right: 50px;
+    }
+
+    .form__text {
+        text-align: center;
+        width: 236px;
+    }
+
+    .form__tel-aria {
+        align-self: start;
+    }
+
+    .form__tel {
+        align-self: start;
+        width: 100%;
+    }
+
+    .form__button {
+        align-self: start; 
+        width: 100%
+    }
+
+    .form__checkbox {
+        margin-left: -22px;
+    }
+}

@@ -1,0 +1,10 @@
+html, body {
+    font-family: 'Roboto Condensed';
+    font-weight: 400; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

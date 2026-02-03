@@ -1,0 +1,358 @@
+.hero {
+    background-color: transparent;
+    position: relative;
+    height: 100vh;
+    max-height: 745px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.hero__block {
+    max-width: 664px;
+    padding-block: 117px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__block-title {
+    font-family: 'Cuprum';
+    font-size: 58px;
+    background: var(--color-light-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 32px;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+.hero__block-after {
+    position: relative;
+    display: inline-block;
+}
+
+.hero__block-after::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0.25em;
+    height: 0.25em;
+    background: url(./icon/after\ hero\ M.svg) no-repeat center/contain;
+    pointer-events: none;
+}
+
+.hero__block-title-strong {
+    font-size: 72px;
+}
+
+.hero__service {
+    margin-bottom: 60px;
+    display: flex;
+    column-gap: 40px;
+
+}
+
+.hero__service-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-size: 16px;
+}
+
+.hero__service-item span {
+    color: var(--color-light-opasity);
+}
+
+.hero__service-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--color-beige-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__consultation {
+    max-width: 659px;
+    height: 101px;
+    padding-block: 11px;
+    padding-inline: 12px;
+    border-radius: 20px;
+    background-color: var(--color-opasity);
+    box-shadow: inset 0 4 4px var(--color-opasity-shadow);
+    display:grid;
+    grid-template-columns: minmax(0, 300px) 1fr;
+    column-gap: 16px;
+    z-index: 2;
+}
+
+.hero__consultation-button {
+    position: relative;
+    font-family: 'Cuprum';
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 20px;
+    background: var(--color-gold-gradient);
+    color: var(--color-dark-gold);
+}
+
+.hero__consultation-button-shadow {
+    position: absolute;
+    background-color: var(--color-gold-shadow);
+    filter: blur(2px);
+    border-radius: 20px;
+    bottom: -4px;
+    left: 3%;
+    right: 3%;
+    height: 60px;
+    z-index: -1;
+}
+
+.hero__consultation-info {
+    max-width: 319px;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.hero__consultation-info span {
+    color: var(--color-light);
+    font-size: 18px;
+}
+
+.hero__skroll-down {
+    position: absolute;
+    top: 47%;
+    left: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 55px;
+    color: var(--color-light);
+}
+
+.hero__skroll-text {
+    rotate: -90deg;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: var(--color-light-opasity);
+}
+
+.hero__slaider-dots {
+    width: 94px;
+    height: 38px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__slaider-dot {
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    position: relative;
+}
+
+.hero__slaider-dot.is-active {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1px solid var(--color-beige);
+}
+
+.hero__slaider-dot::after {
+    /* content: ''; */
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-beige);
+    border-radius: 50%; 
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+
+.hero__slaider-dot.is-active.hero__slaider-dot::after {
+    content: '';
+}
+
+.hero__slaider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 500%;
+    height: 100%;
+    /* transition: transform 1s ease-in-out; */
+    z-index: -1;
+    /* transform: translateX(-20% ); */
+}
+
+.slide {
+  width: 20%;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1350px) {
+    .hero__skroll-down {
+        left: -15px;
+        top: 43%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero__block {
+        padding-block: 80px;
+    }
+
+    .hero__block-title {
+        font-size: 40px;
+    }
+
+    .hero__block-title-strong {
+        font-size: 54px;
+    }
+
+    .hero__service-item {
+        font-size: 14px;
+    }
+
+    .hero__consultation {
+        max-width: 500px;
+        grid-template-columns: minmax(100px, 230px) 1fr;
+    }
+
+    .hero__consultation-button {
+        font-size: 20px;
+    }
+
+    .hero__consultation-info span {
+        font-size: 16px;
+    }
+} 
+
+@media (max-width: 1050px) {
+    .hero {
+        padding-inline: 50px;
+    }
+
+    .hero__block {
+        padding-block: 40px;
+    }
+
+    .hero__block-title {
+        margin-bottom: 16px;
+    }
+
+    .hero__service {
+        margin-bottom: 30px;
+    }
+
+    .hero__block-title {
+        font-size: 30px;
+
+    }
+
+    .hero__block-title-strong {
+        font-size: 44px;
+    }
+
+    .hero__service {
+        column-gap: 20px;
+    }
+
+    .hero__service-item {
+        font-size: 12px;
+    }
+
+    .hero__service-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero__consultation-button {
+        font-size: 16px;
+    }
+
+    .hero__consultation-info span {
+        font-size: 12px;
+    }
+
+    .hero__consultation {
+        height: 75px;
+    }
+    
+    .hero__skroll-down {
+        display: none;
+    }
+
+    .hero__consultation-button-shadow {
+        height: 55px;
+        left: 2%;
+        right: 2%;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero__service {
+        flex-direction: column;
+        row-gap: 18px;
+        margin-bottom: 52px;
+    }
+
+    .hero__service-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hero__block-title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 175%;
+    }
+
+    .hero__block-title-strong {
+        font-size: 52px;
+    }
+
+    .hero__consultation {
+        display: flex;
+        flex-direction: column; 
+        row-gap: 24px;
+        background-color: transparent;
+        height: 137px;
+        padding: 0;
+    }
+
+    .hero__consultation-button {
+        height: 63px;
+        font-size: 22px;
+    }
+
+    .hero__consultation-info span {
+        font-size: 18px;
+    }
+
+    .hero {
+        max-height: 624px;
+        padding-inline: 10px;
+    }
+    } 

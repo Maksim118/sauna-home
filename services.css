@@ -1,0 +1,147 @@
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__header {
+    padding-block: 96px;
+    background-color: var(--color-dark-10);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    position: relative;
+    z-index: -2;
+}
+
+.services__header::after {
+    content: 'sauna home';
+    color: var(--color-dark-10-opasity);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(10px, 17.80vw, 17.80vw);
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: -1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.services__header-title {
+    max-width: 770px;
+    font-family: 'Cuprum';
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+
+.services__header-title-strong {
+    background: var(--color-beige-gradient-10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services__header-text {
+    font-size: 20px;
+    color: var(--color-light-opasity);
+}
+
+.services__list {
+    display: flex;
+}
+
+.services__item {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.services__item picture img {
+    transition-duration: 0.3s;
+}
+
+.services__item:hover picture img {
+    transform: scale(1.2); /* увеличение на 20% */
+}
+    
+
+.services__item-backgraund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.services__item-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-left: 40px;
+    margin-bottom: 24px;
+}
+
+.services__item-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+.services__item-link {
+    color: var(--color-light-opasity);
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    text-transform: uppercase;
+}
+
+@media (max-width:1350px) {
+    .services__header-title {
+        font-size: 45px;
+    }
+}
+ 
+@media(max-width:1050px) {
+    .services__header {
+        padding-left: 50px;
+    }
+
+    .services__header-text {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 770px) {
+    .services__header {
+        padding-inline: 10px;
+    }
+
+    .services__header-title {
+        font-size: 36px;
+        max-width: 500px;
+    }
+
+    .services__header-text {
+        font-size: 16px;
+    }
+
+    .services__list {
+        flex-direction: column;
+    }
+
+    .services__item {
+        height: 480px;
+        overflow: hidden;
+    }
+
+    .services__item-backgraund {
+        min-height: 480px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+}

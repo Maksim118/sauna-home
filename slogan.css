@@ -1,0 +1,226 @@
+.slogan {
+    display:flex;
+}
+
+.slogan__admin {
+    min-width: 691px;
+    padding-left: 135px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    background-image: url(./immage/slogan/slogan-admin-backgraund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slogan__admin-info {
+    max-width: 270px;
+    margin-bottom: 67px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    z-index: 2;
+}
+
+.slogan__admin-text {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--color-light-opasity);
+}
+
+.slogan__admin-text-strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+.slogan__admin-name {
+    font-family: 'Cuprum';
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+.slogan__admin-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.slogan__content {
+    width: 100%;
+    padding: 76px 135px 151px 98px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+    background-color: var(--color-dark);
+    color: var(--color-light-opasity);
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slogan__content::after {
+    content: '';
+    position: absolute;
+    width: 323px;
+    height: 316px;
+    left: -114px;
+    bottom: -87px;
+    z-index: -1;
+    background: url(./immage/slogan/slogan-svg-1.svg);
+    background-repeat: no-repeat;
+}
+
+.slogan__content::before {
+    content: '';
+    position: absolute;
+    width: 323px;
+    height: 316px;
+    right: -251px;
+    bottom: 30%;
+    z-index: -1;
+    background: url(./immage/slogan/slogan-svg-2.svg);
+    background-repeat: no-repeat;
+}
+
+.slogan__content-title {
+    font-family: 'Cuprum';
+    font-weight: 400;
+    font-size: 52px;
+}
+
+.slogan__content-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.slogan__content-logo {
+    max-width: 328px;
+    position: absolute;
+    right: 0;
+    bottom: 39.42px;
+    z-index: -1;
+}
+
+@media (max-width:1350px) {
+    .slogan__admin {
+        padding-left: 80px;
+        min-width: 540px;
+    }
+
+    .slogan__content {
+        padding: 56px 80px 110px 60px;
+        font-size: 18px;
+        row-gap: 42px;
+    }
+
+    .slogan__content-title {
+        font-size: 45px;
+    }
+
+    .slogan__content-info {
+        row-gap: 26px;
+    }
+
+    .slogan__content-logo {
+    width: 190px;
+    position: absolute;
+    right: 0;
+    bottom: 30.42px;
+    z-index: -1;
+}
+}
+
+@media (max-width: 1150px) {
+    .slogan__admin {
+        min-width: 460px;
+    }
+
+    .slogan__content-title {
+        font-size: 40px;
+    }
+
+    .slogan__content {
+        font-size: 16px;
+        padding: 35px 80px 70px 60px;
+    }
+
+    .slogan__content-logo {
+        width: 120px;
+        position: absolute;
+        right: 0;
+        bottom: 20.42px;
+        z-index: -1;
+    }
+}
+
+@media (max-width:1050px) {
+    .slogan__admin {
+        min-width: 370px;
+        padding-left: 50px;
+    }
+
+    .slogan__content {
+        padding: 26px 50px 70px 30px;
+        font-size: 16px;
+        row-gap: 25px;
+    }
+
+    .slogan__content-title {
+        font-size: 30px;
+    }
+
+    .slogan__content-info {
+        row-gap: 15px;
+    }
+}
+
+@media(max-width:770px) {
+    .slogan {
+        flex-direction: column-reverse;
+    }
+
+    .slogan__content {
+        padding: 40px 10px 168px 10px;
+        font-size: 16px;
+        row-gap: 24px;
+    }
+
+    .slogan__content-info {
+        row-gap: 32px;
+    }
+
+    .slogan__content-title {
+        font-size: 32px;
+    }
+
+    .slogan__content-logo {
+        width: auto;
+        position: absolute;
+        right: 0;
+        bottom: 32.26px;
+        z-index: -1;
+    }
+
+    .slogan__admin {
+        height: 550px;
+    }
+}
+
+@media(max-width:570px) {
+    .slogan__admin {
+        height: 459px;
+        min-width: auto;
+        padding-left: 24px;
+    }
+
+    .slogan__admin-info {
+        margin-bottom: 24px;
+    }
+}

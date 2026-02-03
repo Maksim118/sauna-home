@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./vars.css">
+    <link rel="stylesheet" href="./reset-style.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./utilities.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./slogan.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./advantages.css">
+    <link rel="stylesheet" href="./bid.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./results.css">
+    <link rel="stylesheet" href="./reviews.css">
+    <link rel="stylesheet" href="./footer.css">
+    <title>SAUNA HOME</title>
+</head>
+<body >
+    <header class="header">
+        <div class="header__logo">
+            <img src="./icon/SAUNA HOME logo.svg" alt="logo SAUNA HOME">
+        </div>
+
+        <nav class="header__menu" data-js-navigation-menu>
+            <ul class="header__menu-list">
+                <li class="header__menu-item is-active">
+                    <a href="/" class="header__menu-link">Главная</a>
+                </li>
+                <li class="header__menu-item" data-js-item-menu > 
+                    Наши услуги
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                    class="header__menu-arrow" data-js-header-arrow >
+                        <path d="M4.60156 4.5L1.10156 0.5H8.10156L4.60156 4.5Z" fill="currentColor" stroke="currentColor"/>
+                    </svg>
+                    <ul class="header__menu-sublist no-visible" data-js-submenu >
+                        <li class="header__menu-subitem">
+                            <a href="/" class="header__menu-sublink">Услуга</a>
+                        </li>
+                        <li class="header__menu-subitem">
+                            <a href="/" class="header__menu-sublink">Услуга</a>
+                        </li>
+                        <li class="header__menu-subitem">
+                            <a href="/" class="header__menu-sublink">Услуга</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Примеры работ</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">Этапы работы</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="/" class="header__menu-link">О нас</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="tel:+7 (925) 949-03-09" class="header__contacts" >
+            <div class="header__contacts-icon">
+                <img src="./icon/header-whatsap-icon.svg" alt="whatsap">
+            </div>
+            +7 (925) 949-03-09
+        </a>
+        <button class="burger-button visible-mobile" data-js-burger-button>
+            <span class="burger__batton-lain "></span>
+            <span class="burger__batton-lain "></span>
+            <span class="burger__batton-lain "></span>
+        </button>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero__block">
+                <h1 class="hero__block-title">КАЧЕСТВЕННАЯ ОТДЕЛКА<br> <strong class="hero__block-title-strong">БАНЬ, САУН, ХАМА<span class="hero__block-after"></span>МОВ </strong> </h1>
+                <div class="hero__service">
+                    <div class="hero__service-item">
+                        <div class="hero__service-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6C15 6.26522 14.8946 6.51957 14.7071 6.70711C14.5196 6.89464 14.2652 7 14 7C13.7348 7 13.4804 6.89464 13.2929 6.70711C13.1054 6.51957 13 6.26522 13 6C13 5.73478 13.1054 5.48043 13.2929 5.29289C13.4804 5.10536 13.7348 5 14 5C14.2652 5 14.5196 5.10536 14.7071 5.29289C14.8946 5.48043 15 5.73478 15 6ZM12.5 2C9.424 2 7 4.424 7 7.5C7 7.897 7.04 8.296 7.122 8.675C7.18 8.945 7.114 9.179 6.98 9.313L2.44 13.853C2.30043 13.9924 2.18973 14.1579 2.11423 14.3402C2.03873 14.5224 1.99991 14.7177 2 14.915V16.5C2 16.8978 2.15804 17.2794 2.43934 17.5607C2.72064 17.842 3.10218 18 3.5 18H5.5C5.89783 18 6.27936 17.842 6.56066 17.5607C6.84196 17.2794 7 16.8978 7 16.5V16H8C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V14H10C10.2652 14 10.5196 13.8946 10.7071 13.7071C10.8946 13.5196 11 13.2652 11 13V12.82C11.493 12.954 12.007 13 12.5 13C15.576 13 18 10.576 18 7.5C18 4.424 15.576 2 12.5 2ZM8 7.5C8 4.976 9.976 3 12.5 3C15.024 3 17 4.976 17 7.5C17 10.024 15.024 12 12.5 12C11.84 12 11.227 11.905 10.724 11.653C10.6478 11.6148 10.563 11.5967 10.4779 11.6005C10.3927 11.6043 10.3099 11.6298 10.2373 11.6746C10.1648 11.7194 10.1049 11.782 10.0633 11.8564C10.0218 11.9309 10 12.0147 10 12.1V13H9C8.73478 13 8.48043 13.1054 8.29289 13.2929C8.10536 13.4804 8 13.7348 8 14V15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16V16.5C6 16.6326 5.94732 16.7598 5.85355 16.8536C5.75979 16.9473 5.63261 17 5.5 17H3.5C3.36739 17 3.24022 16.9473 3.14645 16.8536C3.05268 16.7598 3 16.6326 3 16.5V14.914C3.00003 14.7816 3.05253 14.6547 3.146 14.561L7.687 10.02C8.119 9.588 8.209 8.976 8.099 8.464C8.03215 8.14705 7.99897 7.82392 8 7.5Z" fill="url(#paint0_linear_69_18625)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_69_18625" x1="-2.16894" y1="6.36009" x2="6.55124" y2="22.3601" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#AC6C44"/>
+                                <stop offset="1" stop-color="#301103"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Под ключ - от проекта до первого пара</span>
+                    </div>
+                    <div class="hero__service-item">
+                        <div class="hero__service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 10.2C4 6.8061 4 5.1087 5.0548 4.0548C6.1096 3.0009 7.8061 3 11.2 3H13C16.3939 3 18.0913 3 19.1452 4.0548C20.1991 5.1096 20.2 6.8061 20.2 10.2V13.8C20.2 17.1939 20.2 18.8913 19.1452 19.9452C18.0904 20.9991 16.3939 21 13 21H11.2C7.8061 21 6.1087 21 5.0548 19.9452C4.0009 18.8904 4 17.1939 4 13.8V10.2Z" stroke="url(#paint0_linear_69_18630)"/>
+                                <path d="M8.5 10.2H15.7M8.5 13.8H13" stroke="url(#paint1_linear_69_18630)" stroke-linecap="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_69_18630" x1="-0.221056" y1="7.9051" x2="10.1235" y2="24.9875" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#AC6C44"/>
+                                <stop offset="1" stop-color="#301103"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_69_18630" x1="6.62398" y1="11.181" x2="7.80844" y2="15.5275" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#AC6C44"/>
+                                <stop offset="1" stop-color="#301103"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Договор с фиксированной сметой</span>
+                    </div>
+                </div>
+                <div class="hero__consultation">
+                    <button class="hero__consultation-button">Получить консультацию
+                        <span class="hero__consultation-button-shadow"></span>
+                    </button>
+                    <div class="hero__consultation-info">
+                        <img src="./icon/hero-consultation-icon.png" alt="clock">
+                        <span>Бесплатная консультация: подберем отделку под ваш бюджет</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__slaider-dots">
+                <span class="hero__slaider-dot is-active" data-js-slaider-dot></span>
+                <span class="hero__slaider-dot" data-js-slaider-dot></span>
+                <span class="hero__slaider-dot" data-js-slaider-dot></span>
+                <span class="hero__slaider-dot" data-js-slaider-dot></span>
+                <span class="hero__slaider-dot" data-js-slaider-dot></span>
+            </div>
+
+            <button class="hero__skroll-down">
+                    <span class="hero__skroll-text">листайте вниз</span>
+                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="18" height="26" rx="9" stroke="white"/>
+                    <path d="M9.5 8V10.5" stroke="white"/>
+                    <path d="M15.0107 30.707L15.3643 31.0606L15.7178 30.707L15.3643 30.3535L15.0107 30.707ZM9.70703 36.0107L9.35348 36.3643L9.70703 36.7178L10.0606 36.3643L9.70703 36.0107ZM9.50488 35.8086L9.85844 35.455L9.50403 35.1006L9.15047 35.4559L9.50488 35.8086ZM9.30371 36.0107L8.95016 36.3643L9.30457 36.7187L9.65812 36.3634L9.30371 36.0107ZM4 30.707L3.64645 30.3535L3.29289 30.707L3.64645 31.0606L4 30.707ZM4.70703 30L5.06058 29.6464L4.70703 29.2929L4.35348 29.6464L4.70703 30ZM9.50488 34.7979L9.15133 35.1514L9.50485 35.5049L9.8584 35.1514L9.50488 34.7979ZM14.3037 30L14.6573 29.6464L14.3037 29.2929L13.9502 29.6464L14.3037 30ZM15.0107 30.707L14.6572 30.3535L9.35348 35.6572L9.70703 36.0107L10.0606 36.3643L15.3643 31.0606L15.0107 30.707ZM9.70703 36.0107L10.0606 35.6572L9.85844 35.455L9.50488 35.8086L9.15133 36.1621L9.35348 36.3643L9.70703 36.0107ZM9.50488 35.8086L9.15047 35.4559L8.9493 35.658L9.30371 36.0107L9.65812 36.3634L9.85929 36.1613L9.50488 35.8086ZM9.30371 36.0107L9.65726 35.6572L4.35355 30.3535L4 30.707L3.64645 31.0606L8.95016 36.3643L9.30371 36.0107ZM4 30.707L4.35355 31.0606L5.06058 30.3536L4.70703 30L4.35348 29.6464L3.64645 30.3535L4 30.707ZM4.70703 30L4.35348 30.3536L9.15133 35.1514L9.50488 34.7979L9.85844 34.4443L5.06058 29.6464L4.70703 30ZM9.50488 34.7979L9.8584 35.1514L14.6572 30.3536L14.3037 30L13.9502 29.6464L9.15137 34.4443L9.50488 34.7979ZM14.3037 30L13.9502 30.3536L14.6572 31.0606L15.0107 30.707L15.3643 30.3535L14.6573 29.6464L14.3037 30Z" fill="white"/>
+                </svg>
+            </button>
+
+            <div class="hero__slaider" data-js-slaider >
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image-5.jpg" alt="slide 5 clone"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image.jpg" alt="slide 1"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image-2.jpg" alt="slide 2"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image-3.jpg" alt="slide 3"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image-4.jpg" alt="slide 4"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image-5.jpg" alt="slide 5"></div>
+                <div class="slide" data-js-slaid ><img src="./immage/hero-image.jpg" alt="slide 1 clone"></div>
+            </div>
+        </section>
+        
+        <section class="slogan ">
+            <div class="slogan__admin">
+                <div class="slogan__admin-info">
+                    <span class="slogan__admin-name">Иван Мравцев</span>
+                    <span class="slogan__admin-text">
+                        Основатель проекта,<span class="slogan__admin-text-strong">эксперт по проектированию</span> и <span class="slogan__admin-text-strong">строительству</span> парных, саун, хамамов
+                    </span>
+                </div>
+                <div class="slogan__admin-image">
+                    <img src="./immage/slogan/slogan-admin.png" alt="admin">
+                </div>
+            </div>
+
+            <div class="slogan__content">
+                <h2 class="slogan__content-title">
+                    Создадим для вас лучшее место для комфортного отдыха и укрепления здоровья
+                </h2>
+                <div class="slogan__content-info">
+                    <p>
+                        <strong class="slogan-strong">Наша миссия</strong> — это строительство качественных и долговечных саун, парных и хаммамов, учитывая потребности наших клиентов, обеспечивая высокий уровень комфорта, безопасности и стиля
+                    </p>
+                    <p>
+                        Мы дорожим нашей репутацией и поэтому все работы выполняем своими силами не передавая заказы другим строителям, как это делают многие.
+                    </p>
+                </div>
+                <img class="slogan__content-logo" src="./immage/slogan/slogon-logo.svg" alt="">
+            </div>   
+        </section>
+
+        <section class="services">
+            <div class="services__header container">
+                <h3 class="services__header-title">Вот что мы делаем <span class="services__header-title-strong">качественно, надежно</span> и <span class="services__header-title-strong">точно в срок</span></h3>
+                <sapn class="services__header-text">Ваша идеальная зона отдыха</sapn>
+            </div>
+            <div class="services__main">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <div class="services__item-info">
+                            <sapn class="services__item-name">
+                                Отделка парных зон
+                            </sapn>
+                            <a href="./" class="services__item-link">
+                                Подробнее
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.58301 13.9997H20.4163M20.4163 13.9997L15.0634 9.33301M20.4163 13.9997L15.0634 18.6663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <picture>
+                            <source srcset="./immage/services/services-backgraund-mobail-1.jpg"  media="(max-width: 470px)">
+                            <img class="services__item-backgraund" src="immage/services-1.jpg" alt="">
+                        </picture>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__item-info">
+                            <sapn class="services__item-name">
+                                Отделка парных зон
+                            </sapn>
+                            <a href="./" class="services__item-link">
+                                Подробнее
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.58301 13.9997H20.4163M20.4163 13.9997L15.0634 9.33301M20.4163 13.9997L15.0634 18.6663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <picture>
+                            <source srcset="./immage/services/services-backgraund-mobail-2.jpg"  media="(max-width: 470px)">
+                            <img class="services__item-backgraund" src="immage/services-2.jpg" alt="">
+                        </picture>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__item-info">
+                            <sapn class="services__item-name">
+                                Отделка парных зон
+                            </sapn>
+                            <a href="./" class="services__item-link">
+                                Подробнее
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.58301 13.9997H20.4163M20.4163 13.9997L15.0634 9.33301M20.4163 13.9997L15.0634 18.6663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <picture>
+                            <source srcset="./immage/services/services-backgraund-mobail-3.jpg"  media="(max-width: 470px)">
+                            <img class="services__item-backgraund" src="immage/services-3.jpg" alt="">
+                        </picture>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="advantages">
+            <div class="advantages__body">
+                <div class="advantages__main" >
+                    <div class="advantages__header">
+                        <h4 class="advantages__header-title">Почему выбирают нас?</h4>
+                        <div class="advantages__inner">
+                            <span class="advantages__inner-circle">
+                                <img src="./immage/advantages/Ellipse 28.jpg" alt="">
+                            </span>
+                            <span class="advantages__inner-numb">175+</span>
+                            <span class="advantages__inner-info">готовых<br> проектов</span>
+                        </div>
+                    </div>
+                    <ul class="advantages__list" data-js-advantages-swiper>
+                        <li class="advantages__item">
+                            <div class="advantages__item-header">
+                                <span class="advantages__item-numb">01</span>
+                                <span class="advantages__item-title">Прозрачность и честность</span>
+                            </div>
+                            <p>
+                                Составляем подробную смету, фиксируем стоимость в договоре. Никаких скрытых платежей или внезапных накруток — только согласованные материалы и работы.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-header">
+                                <span class="advantages__item-numb">02</span>
+                                <span class="advantages__item-title">Качество и надежность</span>
+                            </div>
+                            <p>
+                                Полный цикл строительства — без ваших хлопот. От первой консультации до первого пара мы берём на себя все этапы
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-header">
+                                <span class="advantages__item-numb">03</span>
+                                <span class="advantages__item-title">Все берем на себя</span>
+                            </div>
+                            <p>
+                                Полный цикл строительства — без ваших хлопот. От первой консультации до первого пара мы берём на себя все этапы
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-header">
+                                <span class="advantages__item-numb">04</span>
+                                <span class="advantages__item-title">Строим своими силами</span>
+                            </div>
+                            <p>
+                                Все работы мы выполняем своими силами, что позволяет нам гарантировать качество и лучшую цену
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="advantages__footer">
+                        <div class="advantages__swapper">
+                            <button class="advantages__button" data-js-swip-left>
+                                <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.4004 3.3458C23.6213 3.3458 23.8004 3.16671 23.8004 2.9458C23.8004 2.72489 23.6213 2.5458 23.4004 2.5458V2.9458V3.3458ZM0.117548 2.66296C-0.0386618 2.81917 -0.0386618 3.07243 0.117548 3.22864L2.66313 5.77423C2.81934 5.93044 3.07261 5.93044 3.22882 5.77423C3.38503 5.61802 3.38503 5.36475 3.22882 5.20854L0.966076 2.9458L3.22882 0.683059C3.38503 0.526849 3.38503 0.273583 3.22882 0.117374C3.07261 -0.038836 2.81934 -0.038836 2.66313 0.117374L0.117548 2.66296ZM23.4004 2.9458V2.5458H0.400391V2.9458V3.3458H23.4004V2.9458Z" fill="#202020"/>
+                                </svg>
+                            </button>
+                            <button class="advantages__button" data-js-swip-right>
+                                <svg width="64" height="6" viewBox="0 0 64 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.400391 2.5458C0.179474 2.5458 0.000389099 2.72489 0.000389099 2.9458C0.000389099 3.16671 0.179474 3.3458 0.400391 3.3458V2.9458V2.5458ZM63.6832 3.22864C63.8394 3.07243 63.8394 2.81917 63.6832 2.66296L61.1376 0.117374C60.9814 -0.038836 60.7282 -0.038836 60.572 0.117374C60.4158 0.273583 60.4158 0.526849 60.572 0.683059L62.8347 2.9458L60.572 5.20854C60.4158 5.36475 60.4158 5.61802 60.572 5.77423C60.7282 5.93044 60.9814 5.93044 61.1376 5.77423L63.6832 3.22864ZM0.400391 2.9458V3.3458L63.4004 3.3458V2.9458V2.5458L0.400391 2.5458V2.9458Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="advantages__index"><span class="advantages__index-target" data-js-swapper-inner>01</span>/04</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bid">
+            <div class="bid__container container">
+                <div class="bid__content-container-mobail">
+                    <div class="bid__content">
+                        <h5 class="bid__content-title">Оставьте заявку и я перезвоню, чтобы обсудить ваш проекта</h5>
+                        <ul class="bid__content-list">
+                            <li class="bid__content-item">
+                                <div class="bid__content-circle">
+                                    <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_122_7868)">
+                                        <path d="M17.6122 8.36506L12.1083 3.59501C12.0349 3.52163 11.8882 3.44824 11.7414 3.44824C11.5946 3.44824 11.4478 3.52163 11.3745 3.59501L5.87055 8.36506C5.72378 8.43845 5.72378 8.58522 5.65039 8.73199C5.65039 8.87876 5.72378 9.02553 5.79716 9.1723C5.87055 9.31908 6.01732 9.31908 6.16409 9.39246C6.31086 9.39246 6.45763 9.31908 6.6044 9.24569L7.26487 8.65861V13.3553C7.26487 13.502 7.33826 13.6488 7.41164 13.7222C7.48503 13.7956 7.6318 13.869 7.77857 13.869H11.2277V11.3005H12.2551V13.869H15.7042C15.851 13.869 15.9977 13.7956 16.0711 13.7222C16.1445 13.6488 16.2179 13.502 16.2179 13.3553V8.65861L16.8784 9.24569C16.9517 9.31908 17.0985 9.39246 17.2453 9.39246C17.3921 9.39246 17.4654 9.39246 17.5388 9.31908C17.6122 9.24569 17.6856 9.1723 17.759 9.02553C17.8324 8.95215 17.8324 8.80538 17.759 8.65861C17.759 8.51184 17.6856 8.43845 17.6122 8.36506ZM15.1171 12.7682H13.3559V10.7868C13.3559 10.64 13.2825 10.4932 13.2091 10.4199C13.1357 10.3465 12.9889 10.2731 12.8422 10.2731H10.714C10.5672 10.2731 10.4204 10.3465 10.3471 10.4199C10.2737 10.4932 10.2003 10.64 10.2003 10.7868V12.7682H8.43904V7.63121L11.8148 4.69579L15.1905 7.63121L15.1171 12.7682Z" fill="url(#paint0_linear_122_7868)"/>
+                                        <path d="M19.7395 0.733887H3.74148C3.00763 0.733887 2.34716 1.02743 1.83346 1.46774C1.31977 1.98144 1.09961 2.64191 1.09961 3.30238V14.457C1.09961 15.1174 1.39315 15.8513 1.83346 16.2916C2.34716 16.8053 3.00763 17.0254 3.6681 17.0254H5.50273V21.9423C5.50273 22.089 5.57612 22.2358 5.64951 22.3092C5.72289 22.3826 5.86966 22.5294 5.94305 22.5294C6.01643 22.7495 6.08982 22.7495 6.1632 22.7495C6.23659 22.7495 6.38336 22.7495 6.45675 22.6761C6.53013 22.6027 6.60352 22.6027 6.6769 22.5294L11.3002 17.1722L12.401 15.8513H10.7131L6.97044 20.1076L6.75029 20.3278V15.8513H3.74148C3.37456 15.8513 3.08102 15.7045 2.78747 15.4844C2.56732 15.2642 2.42055 14.8973 2.42055 14.5303V3.37576C2.42055 3.00883 2.56732 2.71529 2.78747 2.42175C3.00763 2.2016 3.37456 2.05482 3.74148 2.05482H19.8129C20.1798 2.05482 20.4734 2.2016 20.7669 2.42175C20.9871 2.64191 21.1338 3.00883 21.1338 3.37576V14.5303C21.1338 14.8973 20.9871 15.1908 20.7669 15.4844C20.5467 15.7045 20.1798 15.8513 19.8129 15.8513H14.309L13.2082 17.1722H19.8129C20.4734 17.1722 21.2072 16.8787 21.6475 16.4384C22.1612 15.9247 22.3814 15.2642 22.3814 14.6037V3.37576C22.3814 3.00883 22.308 2.71529 22.1612 2.34837C22.0145 2.05482 21.8677 1.76128 21.6475 1.46774C21.4274 1.24758 21.1338 1.02743 20.7669 0.880658C20.4734 0.807272 20.1064 0.733887 19.7395 0.733887Z" fill="url(#paint1_linear_122_7868)"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_122_7868" x1="5.65039" y1="8.65861" x2="17.814" y2="8.65861" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#434343"/>
+                                        <stop offset="1"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_122_7868" x1="1.09961" y1="11.7417" x2="22.3814" y2="11.7417" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#434343"/>
+                                        <stop offset="1"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_122_7868">
+                                        <rect width="23.4833" height="23.4833" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span class="bid__content-text"><strong>Отвечу на все вопросы</strong> технического характера</span>
+                            </li>
+                            <li class="bid__content-item">
+                                <div class="bid__content-circle">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_122_7875)">
+                                        <g clip-path="url(#clip1_122_7875)">
+                                        <path d="M22.8943 11.1546H20.9863C20.8395 8.87964 19.8855 6.75146 18.271 5.21036C16.6565 3.59589 14.5284 2.64188 12.3268 2.4951V0.587083C12.3268 0.440313 12.2534 0.293542 12.18 0.146771C12.0333 0.0733854 11.8865 0 11.7397 0C11.5929 0 11.4462 0.0733854 11.2994 0.146771C11.226 0.220156 11.1526 0.366927 11.1526 0.587083V2.4951C8.87768 2.64188 6.74951 3.59589 5.20841 5.21036C3.59393 6.82484 2.63992 8.95302 2.49315 11.1546H0.58513C0.438359 11.1546 0.291589 11.228 0.144818 11.3014C0.0714323 11.4481 -0.00195312 11.5949 -0.00195312 11.7417C-0.00195312 11.8884 0.0714323 12.0352 0.144818 12.182C0.218203 12.2554 0.364974 12.3287 0.58513 12.3287H2.49315C2.63992 14.6037 3.59393 16.7319 5.20841 18.273C6.82289 19.8874 8.95107 20.8415 11.1526 20.9882V22.8963C11.1526 23.043 11.226 23.1898 11.2994 23.3366C11.3728 23.4099 11.5196 23.4833 11.7397 23.4833C11.8865 23.4833 12.0333 23.4099 12.18 23.3366C12.2534 23.2632 12.3268 23.1164 12.3268 22.8963V20.9882C14.6017 20.8415 16.7299 19.8874 18.271 18.273C19.8855 16.6585 20.8395 14.5303 20.9863 12.3287H22.8943C23.0411 12.3287 23.1878 12.2554 23.3346 12.182C23.408 12.1086 23.4814 11.9618 23.4814 11.7417C23.4814 11.5949 23.408 11.4481 23.3346 11.3014C23.1878 11.228 23.0411 11.1546 22.8943 11.1546ZM19.8855 11.1546H17.6105C17.4638 9.83365 16.8767 8.58609 15.9227 7.63208C14.9687 6.67807 13.7211 6.09099 12.4002 5.94422V3.66927C14.3816 3.81604 16.2162 4.62328 17.5372 6.0176C18.8581 7.41193 19.7387 9.24656 19.8855 11.1546ZM11.7397 16.4383C10.7857 16.4383 9.90508 16.1448 9.17122 15.6311C8.43737 15.1174 7.7769 14.3835 7.48336 13.5029C7.11643 12.6223 7.04305 11.7417 7.18982 10.7877C7.33659 9.90703 7.85029 9.02641 8.43737 8.36594C9.09784 7.70547 9.90508 7.26516 10.8591 7.11839C11.7397 6.97161 12.6937 7.045 13.5743 7.41193C14.455 7.77885 15.1888 8.36594 15.7025 9.17318C16.2162 9.90703 16.5098 10.861 16.5098 11.7417C16.5098 12.9892 15.9961 14.1634 15.1154 15.044C14.1614 15.9246 12.9873 16.4383 11.7397 16.4383ZM11.1526 3.66927V5.94422C9.83169 6.09099 8.58414 6.67807 7.63013 7.63208C6.67612 8.58609 6.08904 9.83365 5.94227 11.1546H3.66732C3.81409 9.17318 4.62133 7.33854 6.01565 6.0176C7.40997 4.62328 9.24461 3.81604 11.1526 3.66927ZM3.66732 12.3287H5.94227C6.08904 13.6497 6.67612 14.8972 7.63013 15.8513C8.58414 16.8053 9.83169 17.3923 11.1526 17.5391V19.8141C9.17122 19.6673 7.40997 18.8601 6.01565 17.4657C4.62133 16.0714 3.81409 14.2368 3.66732 12.3287ZM12.3268 19.8141V17.5391C13.6477 17.3923 14.8953 16.8053 15.8493 15.8513C16.8033 14.8972 17.3904 13.6497 17.5372 12.3287H19.8121C19.6653 14.3102 18.8581 16.1448 17.4638 17.4657C16.0695 18.8601 14.2348 19.6673 12.3268 19.8141Z" fill="url(#paint0_linear_122_7875)"/>
+                                        <path d="M11.7374 9.1001C11.2237 9.1001 10.71 9.24687 10.2697 9.54041C9.82936 9.83395 9.46243 10.2743 9.31566 10.7146C9.0955 11.2283 9.0955 11.742 9.16889 12.2557C9.24228 12.7694 9.53582 13.2831 9.90274 13.65C10.2697 14.0169 10.7834 14.3105 11.2971 14.3838C11.8108 14.4572 12.3245 14.4572 12.8382 14.2371C13.3519 14.0169 13.7188 13.7234 14.0123 13.2831C14.3059 12.8428 14.4526 12.3291 14.4526 11.8154C14.4526 11.0815 14.1591 10.421 13.6454 9.90734C13.1317 9.32025 12.4712 9.1001 11.7374 9.1001ZM11.7374 13.2831C11.4438 13.2831 11.1503 13.2097 10.8568 12.9895C10.6366 12.8428 10.4164 12.5492 10.2697 12.3291C10.1229 12.0355 10.1229 11.742 10.1963 11.4484C10.2697 11.1549 10.4164 10.8613 10.6366 10.6412C10.8568 10.421 11.1503 10.2743 11.4438 10.2009C11.7374 10.1275 12.0309 10.2009 12.3245 10.2743C12.618 10.421 12.8382 10.5678 12.9849 10.8613C13.1317 11.0815 13.2785 11.375 13.2785 11.742C13.2785 12.1823 13.1317 12.5492 12.8382 12.8428C12.5446 13.1363 12.1777 13.2831 11.7374 13.2831Z" fill="url(#paint1_linear_122_7875)"/>
+                                        </g>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_122_7875" x1="-0.00195312" y1="11.7417" x2="23.4814" y2="11.7417" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#434343"/>
+                                        <stop offset="1"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_122_7875" x1="9.125" y1="11.7639" x2="14.4526" y2="11.7639" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#434343"/>
+                                        <stop offset="1"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_122_7875">
+                                        <rect width="23.4833" height="23.4833" fill="white"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_122_7875">
+                                        <rect width="23.4833" height="23.4833" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span class="bid__content-text"><strong>Подскажу, как лучше</strong> реализовать ваши задачи</span>
+                            </li>
+                            <li class="bid__content-item">
+                                <div class="bid__content-circle">
+                                    <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_122_7861)">
+                                    <g clip-path="url(#clip1_122_7861)">
+                                    <path d="M11.0927 14.2656C10.9753 14.2656 10.8579 14.3243 10.7405 14.383C10.6818 14.5005 10.623 14.6179 10.623 14.7353V15.9682C10.623 16.0856 10.6818 16.203 10.7405 16.3204C10.7992 16.4378 10.9753 16.4378 11.0927 16.4378C11.2101 16.4378 11.3275 16.3791 11.445 16.3204C11.5037 16.203 11.5624 16.0856 11.5624 15.9682V14.7353C11.5624 14.6179 11.5037 14.5005 11.445 14.383C11.3275 14.3243 11.2101 14.2656 11.0927 14.2656Z" fill="url(#paint0_linear_122_7861)"/>
+                                    <path d="M20.8982 10.8607L22.1311 11.5065L23.4814 8.80589L11.7397 2.93506L-0.00195312 8.74718L1.34834 11.4478L2.58121 10.8607V19.4321H0.819964V20.5476H9.91975V11.2129H13.6184V20.5476H22.7182V19.4321H20.9569V10.8607H20.8982ZM1.81801 9.98006L1.46576 9.27556L11.7397 4.16793L22.0137 9.27556L21.6614 9.98006L11.7397 5.16598L1.81801 9.98006ZM14.6164 7.74914H8.92171L11.7984 6.34014L14.6164 7.74914ZM8.8043 10.0975V19.4321H3.63796V18.1992H7.92367V17.0838H3.63796V15.8509H7.92367V14.7354H3.63796V13.5026H7.92367V12.3871H3.63796V11.1542H7.92367V10.0388H4.10763L6.63209 8.80589H16.8473L19.3718 10.0388H8.8043V10.0975ZM19.7828 19.4321H14.6751V18.1992H19.8415V19.4321H19.7828ZM19.7828 17.1425H14.6751V15.9096H19.8415V17.1425H19.7828ZM19.7828 14.7941H14.6751V13.5613H19.8415V14.7941H19.7828ZM19.7828 12.4458H14.6751V11.2129H19.8415V12.4458H19.7828Z" fill="url(#paint1_linear_122_7861)"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_122_7861" x1="10.623" y1="15.3517" x2="11.5624" y2="15.3517" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#434343"/>
+                                    <stop offset="1"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_122_7861" x1="-0.00195312" y1="11.7413" x2="23.4814" y2="11.7413" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#434343"/>
+                                    <stop offset="1"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_122_7861">
+                                    <rect width="23.4833" height="23.4833" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_122_7861">
+                                    <rect width="23.4833" height="23.4833" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                </div>
+                                <span class="bid__content-text"><strong>Сделаю подборку уже реализованных проектов,</strong> с ценами и сроками реализации</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bid__winner">
+                        <div class="bid__winner-info">
+                            <span class="bid__winner-name">Иван Мравцев</span>
+                            <span class="bid__winner-text">Победитель архитектурных конкурсов Спа-индустрии</span>
+                        </div>
+                        <span class="bid__winner-circle">
+                            <img src="immage/bid/winner.png" alt="">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_69_18744)">
+                                <path d="M30.1477 26.0392L23.0359 18.9268C21.9762 20.5748 20.5738 21.9765 18.9258 23.0362L26.0382 30.1486C27.1737 31.2838 29.0146 31.2838 30.1476 30.1486C31.2832 29.0153 31.2832 27.1743 30.1477 26.0392Z" fill="#5D4631"/>
+                                <path d="M23.2499 11.625C23.2499 5.20527 18.0449 0 11.625 0C5.20527 0 0 5.20527 0 11.625C0 18.0448 5.20527 23.2498 11.625 23.2498C18.0449 23.2498 23.2499 18.0448 23.2499 11.625ZM11.625 20.3434C6.8172 20.3434 2.90633 16.4329 2.90633 11.6251C2.90633 6.81726 6.8172 2.9064 11.625 2.9064C16.4327 2.9064 20.3439 6.81726 20.3439 11.6251C20.3439 16.4329 16.4327 20.3434 11.625 20.3434Z" fill="#5D4631"/>
+                                <path d="M4.84375 11.6249H6.78101C6.78101 8.95414 8.95414 6.7812 11.6249 6.7812V4.84375C7.88623 4.84375 4.84375 7.88623 4.84375 11.6249Z" fill="#5D4631"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_69_18744">
+                                <rect width="31" height="31" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <img class="bid__bitmap-moobile" src="immage/bid/Bitmap.png" alt="" width="320px" height="342px">
+                </div>
+                <div class="bid__connection">
+                    <form class="form " action="#" method="post" id="form" >
+                        <h6 class="form__title">Оставьте заявку</h6>
+                        <span class="form__text">и я перезвоню вам, чтобы обсудить ваш проект</span>
+                        <span class="form__tel-aria">Введите ваш номер телефона:</span>
+                        <label class="form__tel" >
+                                <input name="tel" id="tel" class="form__tel-input" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" data-js-tel>
+                        </label>
+                        <button class="form__button hero__consultation-button">
+                            Оставить заявку
+                            <span class="hero__consultation-button-shadow"></span>
+                        </button>
+                        
+                        <label class="form__checkbox" for="check">
+                        <input name="radio" class="form__checkbox-input" type="checkbox" id="radio">
+                        <span class="form__checkbox-aria">Вы соглашаетесь с условиями обработки персональных данных</span>
+                        </label>
+                    </form>
+                    <div class="bid__message">
+                        <span class="bid__message-text">Или напишите нам в любой удобный мессенджер</span>
+                        <div class="bid__message-links">
+                            <a href="/" class="bid__message-link bid__message-link-green">
+                                <img src="icon/bid/whatsapp.svg" alt="whatsapp">
+                                WhatsApp
+                            </a>
+                            <a href="/" class="bid__message-link bid__message-link-blue">
+                                <img src="icon/bid/telegram.svg" alt="telegram">
+                                Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results">
+            <div class="results__header container">
+                <div class="results__header-info">
+                    <h6 class="results__title">
+                        Фото реализованных нами проектов бань и саун помогут вам оценить <strong>высокое качество</strong> и <strong>уникальный дизайн</strong>
+                    </h6>
+                    <span class="results__subtitle">
+                        Загляните в наши бани и сауны: фотогалерея, где качество встречается с уникальным дизайном
+                    </span>
+                </div>
+                <img src="immage/results/book.png" alt="" class="results__image">
+            </div>
+            <div class="results__body">
+                <ul class="results__list" data-js-results-slider >
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-1.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-2.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-3.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-4.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-5.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="results__item">
+                        <img src="immage/results/results-item-bacraund-6.jpg" alt="" class="results__item-image">
+                        <span class="results__item-name">Сауна «Павлово-1»</span>
+                        <a href="/" class="results__link">
+                            Подробнее
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 5.41667H13.5833M13.5833 5.41667L8.23039 0.75M13.5833 5.41667L8.23039 10.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="slaider__dots">
+                    <li class="slaider__dot is-active" data-js-pagination-dot></li>
+                    <li class="slaider__dot" data-js-pagination-dot></li>
+                    <li class="slaider__dot" data-js-pagination-dot></li>
+                    <li class="slaider__dot" data-js-pagination-dot></li>
+                    <li class="slaider__dot" data-js-pagination-dot></li>
+                    <li class="slaider__dot" data-js-pagination-dot></li>
+                </ul>
+                <span class="results__inner"><span class="results__number" data-js-result-number>01</span>/06</span>
+            </div>
+        </section>
+
+        <section class="reviews ">
+            <h6 class="reviews__title">Отзывы</h6>
+            <div class=" container reviews__slaider" >
+                <button class="reviews__button reviews__button-prew" data-js-reviews-button-prew >
+                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 1.5L1.5 11L12.3333 18.9167L14.5 20.5" stroke="#FFCD6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="rewiews__viewport" data-js-reviews-slaider>
+                <ul class="reviews__list" >
+                    <li class="reviews__item &3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="clon-3">
+                    </li>
+                    <li class="reviews__item &4 " data-js-reviews-item>
+                        <img class="reviews-image " src="immage/reviews/reviews-1.jpg" alt="clon-4">
+                    </li>
+                    <li class="reviews__item 1 is-active" data-js-reviews-item >
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="1">
+                    </li>
+                    <li class="reviews__item 2" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="2">
+                    </li>
+                    <li class="reviews__item 3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="3">
+                    </li>
+                    <li class="reviews__item 3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="3">
+                    </li>
+                    <li class="reviews__item 3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="3">
+                    </li>
+                    <li class="reviews__item 3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="3">
+                    </li>
+                    <li class="reviews__item 3" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="3">
+                    </li>
+                    <li class="reviews__item 4" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="4">
+                    </li>
+                    <li class="reviews__item &1" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="clon-1">
+                    </li>
+                    <li class="reviews__item &2" data-js-reviews-item>
+                        <img class="reviews-image" src="immage/reviews/reviews-1.jpg" alt="clon-2">
+                    </li>
+                </ul>
+                </div>
+                <button class="reviews__button reviews__button-next" data-js-reviews-button-next >
+                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 20.5L14.5 11L3.66667 3.08333L1.5 1.5" stroke="#FFCD6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="reviews__scrollbar-container">
+                <span class="reviews__scrollbar" data-js-reviews-scrollbar>
+                    <span class="rewiews__scrollitem" data-js-reviews-skrollitem ></span>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+            <div class="footer__body">
+                <div class="footer__info">
+                    <a href="/" class="footer__logo">
+                        <img src="icon/SAUNA HOME logo.svg" alt="sauna home">
+                    </a>
+                    <span class="footer__description">Уникальные сауны для отдыха с максимальной пользой для вашегот здоровья</span>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__navigation footer__links-list">
+                        <span class="footer__subtitle">
+                            Меню
+                        </span>
+                        <li class="footer__link">
+                            <a href="/">Главная</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Наши услуги</a>
+                        </li>
+                        <li class="footer__link visible-mobail">
+                            <a href="/">Расчитать стоимость онлайн</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Примеры работ</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Этапы работ</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">О нас</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__services footer__links-list hiden-mobile">
+                        <span class="footer__subtitle">
+                            Услуги
+                        </span>
+                        <li class="footer__link">
+                            <a href="/">Строительство саун</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Отделка русских парных</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Строительство хамамов</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="/">Сауна на участке</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__contacts footer__links-list">
+                        <span class="footer__subtitle">
+                            Контакты
+                        </span>
+                        <li class="footer__contacts-tel">
+                            <a href="/">+7 (925) 949-03-09</a>
+                            <a href="/">+7 (931) 577-40-60</a>
+                        </li>
+                        <li class="footer__contacts-mail">
+                            <a href="/">info@sauna-home.com</a>
+                        </li>
+                        <a class="footer__contacts-btn">Зaказфть звонок</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__after">
+                <span class="footer__prava">@ Все права защищены</span>
+            </div>
+    </footer>
+    <script src="./skript.js"></script>
+    <script src="./hero_karusel.js"></script>
+    <script src="./advantages_swaiper.js"></script>
+    <script src="./resultsSlaider.js"></script>
+    <script src="./reviewsSlaider.js"></script>
+    <script src="./form.js"></script>
+</body>
+</html>

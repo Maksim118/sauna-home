@@ -1,0 +1,224 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 100px;
+    /* overflow-x: hidden; */
+    background-color: var(--color-dark);
+}
+
+.reviews__title {
+    font-family: 'Cuprum';
+    text-transform: uppercase;
+    font-size: clamp(28px, 3.47vw, 50px);
+    font-weight: 700;
+    background: var(--color-light-gradient-10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 55px;
+}
+
+.reviews__slaider {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.reviews__slaider::-webkit-scrollbar {
+    display: none;
+}
+
+.rewiews__viewport {
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-right: 200px;
+    padding-left: 200px;
+    height: max-content;
+}
+
+.rewiews__viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews__list {
+    display: flex;
+    align-items: center;
+    column-gap: 6.08vw;
+    box-sizing: border-box;
+    width: max-content;
+    height: 31.94vw;
+}
+
+.reviews__list::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews__item {
+    width: 22.57vw;
+    padding: 1.74vw;
+    background-color: var(--color-light);
+    border-radius: 20px;
+    flex-shrink: 0;
+    transition-duration: 0.4s;
+    position: relative;
+}
+
+.reviews__item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-grey-opasity-10);
+    z-index: 1;
+}
+
+.reviews__item.is-active {
+    /* width: 31.94vw; */
+    transform: scale(1.3);
+    transform-origin: center center;
+}
+
+.reviews__item.is-active::after {
+    background: transparent;
+}
+
+.reviews-image {
+    border-radius: 20px;
+}
+
+.reviews__item.is-prevent {
+    margin-left: 80px;
+}
+
+.reviews__item.is-next {
+    margin-right: 80px;
+}
+
+.reviews__button {
+    border-radius: 50%;
+    width: 81px;
+    height: 81px;
+    background: var(--linear-gradient-dark-grey);
+    transform: translateY(-50%) rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__button:hover {
+    background: var(--linear-gradient-dark-grey-revers);
+}
+
+.reviews__button svg {
+    transform: rotate(45deg);
+}
+
+.reviews__button-prew {
+    left: 73px;
+}
+
+.reviews__button-next {
+    right: 73px;
+}
+
+.reviews__scrollbar-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__scrollbar {
+    position: relative;
+    width: 300px;
+    height: 5px;
+    background-color: var(--color-grey-10);
+    display: flex;
+    align-items: center;
+}
+
+.rewiews__scrollitem {
+    width: 71px;
+    height: 9px;
+    background: var(--color-gold-gradient);
+    position: absolute;
+    left: 0;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+@media(max-width: 770px) {
+    .reviews__item {
+        padding: 0.8vw;
+        border-radius: 4px;
+    }
+
+    .reviews-image {
+        border-radius: 4px;
+    }
+
+    .reviews__item.is-active {
+        transform: scale(3.47);
+        border-radius: 4px;
+    }
+
+    .reviews__list {
+        height: 85.2vw;
+        column-gap: 500px;
+    }
+
+    .reviews {
+        padding-block: 50px;
+    }
+
+    .rewiews__viewport {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews__title {
+        margin-bottom: 30px;
+    }
+
+    .reviews__button {
+        transform: translateY(-50%);
+        background: transparent;
+    }
+
+    .reviews__button:hover {
+        background: transparent;
+    }
+
+    .reviews__button-prew {
+        left: 0;
+    }
+
+    .reviews__button svg {
+        transform: none;
+    }
+  
+    .reviews__button-next {
+        right: 0;
+    }
+
+    .reviews__scrollbar-container {
+        margin-top: 27px;
+    }
+
+    .reviews__scrollbar {
+        width: 230px;
+    }
+
+    .reviews__button-prew {
+        left: -25px;
+    }
+
+    .reviews__button-next {
+        right: -25px;
+    }
+}

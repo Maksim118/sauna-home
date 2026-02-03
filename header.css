@@ -1,0 +1,256 @@
+.header {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    padding-top: 32px;
+    padding-inline: 135px;
+    height: 92px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content:space-between;
+    column-gap: 15px;
+    border-bottom: 1px solid var(--color-grey-opasity);
+    z-index: 5;
+}
+
+.header__menu {
+    background-color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    transform: translateX(100%);
+    transition-duration: 0.3s;
+}
+
+.header__menu.is-active {
+    transform: translateX(0);
+    height: 100vh;
+}
+
+.burger-button.is-active body {
+    overflow: hidden;
+
+}
+
+.header__menu-list {
+    height: 50px;
+    display: flex;
+    margin-top: auto;
+    column-gap: 38px;
+}
+
+.header__menu-sublist.no-visible {
+    display: none;
+}
+
+.header__menu-sublist {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.header__menu-sublink {
+    color: var(--color-light);
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header__menu-arrow.is-active {
+    rotate: 180deg;
+}
+
+.header__menu-arrow {
+    transition-duration: 0.2s;
+}
+
+.header__menu-item {
+    cursor: default;
+}
+
+.header__menu-item, .header__menu-link {
+    color: var(--color-light);
+    font-size: 18px;
+}
+
+.header__menu-item:hover, .header__menu-link:hover {
+    color: var(--color-beige);
+}
+
+.header__menu-item.is-active {
+    border-bottom: 1px solid var(--color-beige);
+}
+
+a.header__contacts {
+    margin-top: 7px;
+    font-family: 'Cuprum';
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--color-beige);
+    text-decoration: underline;
+    text-decoration-color: var(--color-beige);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2.5px;
+}
+
+.burger-button {
+    width: 29px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    z-index: 2;
+} 
+
+.burger-button.is-active {
+    justify-content: center;
+
+}
+
+.burger__batton-lain {
+    height: 2px;
+    background-color: var(--color-light);
+    transition-duration: 0.3s;
+}
+
+.burger-button.is-active :nth-child(1) {
+    rotate: 45deg;
+    transform: translateX(2px);
+}
+
+.burger-button.is-active :nth-child(2) {
+    width: 0;
+}
+
+.burger-button.is-active :nth-child(3) {
+    rotate: -45deg;
+    transform: translateX(2px);
+}
+
+@media (max-width:1350px) {
+    .header {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        height: 72px;
+        padding-top: 20px;
+    }
+
+    .header__menu-list {
+        height: 40px;
+    }
+
+    .header__menu-item, .header__menu-link {
+        font-size: 15px;
+    }
+
+    a.header__contacts {
+        font-size: 16px;
+        column-gap: 8px;
+    }
+
+    .header__contacts-icon {
+        width: 22px;
+    }
+
+    .header__logo {
+        width: 160px;
+    }
+}
+
+@media (max-width: 980px) {
+    .header {
+        padding-inline: 20px;
+        padding-top: 15px;
+        height: 67px;
+    }
+
+    .header__menu-list {
+        height: 35px;
+    }
+
+    .header__menu-item, .header__menu-link {
+        font-size: 12px;
+    }
+
+    a.header__contacts {
+        font-size: 14px;
+    }
+
+    .header__contacts-icon {
+        width: 20px;
+    }
+
+    .header__logo {
+        width: 118px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 770px) {
+        .visible-mobile {
+            display: none;
+        }
+
+        .header__menu {
+            display: contents;
+        }
+    }
+
+@media (max-width: 770px) {
+    .header {
+        height: 46px;
+        padding-top: 21px;
+        padding-inline: 10px;
+        align-items: center;
+        justify-content: end;
+        column-gap: 24px;
+    }
+
+    .header__logo {
+        margin-right: auto;
+
+    }
+
+    .header__menu-list {
+        position: fixed;
+        top: 21.4vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5.3vh;
+        margin-top: 0 ;
+    }
+
+    .header__menu-item.is-active {
+        border-bottom: none;
+    }
+
+    .header__menu-link, .header__menu-item {
+        font-size: 25px;
+    }
+
+    .header__menu-sublist {
+        padding-bottom: 0;
+        padding-top: 4.3vh;
+        row-gap: 4.3vh;
+    }
+
+    .header__menu-sublink {
+        font-size: 25px;
+    }
+
+    a.header__contacts {
+        margin-top: 0;
+    }
+}

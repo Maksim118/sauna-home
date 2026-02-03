@@ -1,0 +1,35 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-green: #3FAF44;
+    --color-blue: #039BE5;
+    --color-dark: #110F11;
+    --color-dark-10: #252325;
+    --color-dark-10-opasity: rgba(255, 255, 255, 0.02);
+    --color-dark-20: #1E2B3A;
+    --color-dark-30: #4E576B;
+    --color-dark-40: #0A0A0A;
+    --color-beige: #FFDDAE;
+    --color-beige-10: #FFF5E2;
+    --color-beige-20: #D6C19A;
+    --color-gold: rgb(251, 255, 0);
+    --color-dark-gold: #5E4631;
+    --color-grey:#B5B5B5;
+    --color-grey-10: #C8C8C8;
+    --color-grey-opasity: #B1B1B11A;
+    --color-grey-opasity-10: #1B191B78;
+    --color-light-opasity: #FFFFFFCC;
+    --color-light-opasity-10: #FFFFFF45;
+    --color-opasity-shadow: rgba(0, 0, 0, 0.25);
+    --color-gold-shadow: rgba(157, 118, 58, 1);
+    --color-opasity: rgba(251, 251, 251, 0.3);
+    --color-light-gradient: linear-gradient(#BDBDBD, #FFFFFF);
+    --color-beige-gradient: linear-gradient( #EAD5AE, #FFF3CC, #FFFFEA);
+    --color-light-gradient-10: linear-gradient( #FFFFFF, #FFFFFF, #A7A7A7);
+    --color-beige-gradient-10: linear-gradient(#B37D6D, #CBA465);
+    --color-gold-gradient: linear-gradient( rgba(255, 221, 174, 1), rgba(255, 200, 85, 1));
+    --radial-gradient-dark: radial-gradient(rgba(13, 13, 13, 0), rgba(12, 12, 12, 1));
+    --radial-gradient-dark-opasity: radial-gradient(rgba(39, 39, 39, 0.4), rgba(255, 255, 255, 0));
+    --linear-gradient-dark-grey:linear-gradient(#100F13, #393939, #110E13);
+    --linear-gradient-dark-grey-revers:linear-gradient(#393939, #110E13, #393939);
+}
+

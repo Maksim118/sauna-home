@@ -1,0 +1,294 @@
+.bid {
+    background-image: url(immage/bid/bid-backraund.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bid__container {
+    padding-top: 59px;
+    padding-bottom: 114.4px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 34%;
+}
+
+.bid__container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(immage/bid/Bitmap.png);
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 642px;
+}
+
+.bid__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.bid__content-title {
+    font-size: clamp(38px, 3.6vw ,52px);
+    background: var(--color-light-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bid__content-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 303px;
+    z-index: 2;
+}
+
+.bid__content-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.bid__content-circle {
+    width: clamp(37px, 3.54vw, 51px);
+    height: clamp(37px, 3.54vw, 51px); 
+    background: var(--color-beige-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bid__content-circle svg {
+    width: clamp(17px, 1.63vw, 23.48px);
+    height: clamp(17px, 1.63vw, 23.48px);
+}
+
+.bid__content-text {
+    color: var(--color-light-opasity);
+    font-size: clamp(12px,1.25vw,18px);
+}
+
+.bid__content-text strong {
+    color: var(--color-light);
+    font-weight: 400;
+}
+
+.bid__winner {
+    max-width: clamp(296px, 24.5vw, 354px);
+    position: absolute;
+    left: 50%;
+    bottom: 87px;
+    transform: translateX(-50%);
+    padding: 23px;
+    border-radius: 20px;
+    border: 1px solid var(--color-light-opasity-10);
+    background: var(--radial-gradient-dark-opasity);
+    backdrop-filter: blur(4px);
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.bid__winner-info {
+    width: clamp(167px, 13.9vw, 201px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bid__winner-name {
+    font-size: clamp(18px, 1.67vw, 24px);
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+.bid__winner-text {
+    font-size: clamp(14px, 1.11vw, 16px);
+    color: var(--color-light);
+    font-weight: 400;
+}
+
+.bid__winner-circle {
+    width: clamp(54px, 6.1vw, 88px);
+    height: clamp(54px, 6.1vw, 88px);
+    position: relative;
+}
+
+.bid__winner-circle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: clamp(19px, 2.1vw, 31px);
+}
+
+.bid__connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.bid__message {
+    width: 323px;
+    padding-inline: 29px;
+    display: flex; 
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    z-index: 1;
+}
+
+.bid__message-text {
+    text-align: center;
+    color: var(--color-grey);
+    font-size: 16px;
+}
+
+.bid__message-links {
+    display: flex;
+    column-gap: 14.7px;
+}
+
+.bid__message-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    padding-block: 11.7px;
+    padding-inline: 22px;
+    border-radius: 22px;
+    font-family: 'Cuprum';
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--color-light);
+}
+
+.bid__message-link-green {
+    background-color: var(--color-green);
+}
+
+.bid__message-link-blue {
+    background-color: var(--color-blue);
+}
+
+.bid__content-container-mobail {
+    display: contents;
+}
+
+.bid__bitmap-moobile {
+    display: none;
+}
+
+@media(max-width:1100px) {
+    .bid__content-container-mobail {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .bid__winner {
+        position: static;
+        transform: none;
+    }
+
+    .bid__container {
+        column-gap: 120px;
+    }
+}
+
+@media(max-width: 900px) {
+    .bid__container {
+        column-gap: 80px;
+        padding-inline: 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    .bid__container {
+        column-gap: 60px;
+    }
+}
+
+@media(max-width: 770px) {
+    .bid {
+        background: none;
+        background-color: var(--color-dark);
+        overflow-x: hidden;
+    }
+
+    .bid__content-container-mobail {
+        position: relative;
+        z-index: 1;
+    }
+
+    .bid__container::before {
+        background: none;
+    }
+
+
+
+    .big__content-text {
+        width: 180px;
+    }
+
+    .bid__content-container-mobail::before {
+        content: '';
+        position: absolute;
+        background-image: url(immage/bid/bid-backraund.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        inset: 0;
+        margin-inline: -10px;
+        z-index: -1;
+    }
+
+    .bid__content-container-mobail::after {
+        content: '';
+        position: absolute;
+        background: var(--radial-gradient-dark);
+        margin-left: -10px;
+        margin-right: -10px;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .bid__container {
+        flex-direction: column;
+        row-gap: 24px;
+        padding-inline: 10px;
+        padding-top: 5px;
+        padding-bottom: 62px;
+    } 
+
+    .bid__connection {
+        align-self: center;
+    }
+
+    .bid__winner {
+        padding-block: 12px;
+        padding-inline: 30px;
+        align-self: center;
+    }
+
+    .bid__bitmap-moobile {
+        display:inline;
+        position: absolute;
+        bottom: 0;
+        right: -25%;
+        z-index: -1;
+        width: 400px;
+    }
+}

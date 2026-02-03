@@ -1,0 +1,31 @@
+.no-overflow {
+    overflow: hidden;
+}
+
+.container {
+    padding-inline: 135px;
+}
+
+@media(min-width: 770px) {
+    .visible-mobail {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .container {
+        padding-inline: 80px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        padding-inline: 10px;
+    }
+}
