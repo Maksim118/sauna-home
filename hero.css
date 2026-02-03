@@ -38,7 +38,7 @@
     left: 0;
     width: 0.25em;
     height: 0.25em;
-    background: url(./icon/after\ hero\ M.svg) no-repeat center/contain;
+    background: url(icon/after\ hero\ M.svg) no-repeat center/contain;
     pointer-events: none;
 }
 
@@ -356,3 +356,4 @@
         padding-inline: 10px;
     }
     } 
+
